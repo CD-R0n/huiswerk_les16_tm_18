@@ -7,10 +7,12 @@ header {
     font-family: 'Leckerli One', cursive;
     font-size: 4rem;
     background-image: url(images/zoetermeer.jpg);
-    position: fixed;
+    position: sticky;
     width: 100%;
     text-align: center;
     padding: 25px;
+    top: 0;
+    box-sizing: border-box;
 }
 @media only screen and (min-width: 768px) {
     .col-1 {
@@ -48,14 +50,10 @@ header {
     }
     .col-12 {
         width: 100%;
-    }
-    #rechts {
-        padding-top: calc(50px + 6rem);
     }            
 }
 #links {
     float: left;
-    padding-top: calc(50px + 6rem);
 }
 #rechts {
     float: right;
@@ -63,7 +61,7 @@ header {
 }
 img {
     float: right;
-    width: 175px;
+    width: 160px;
 }
 footer {
     clear: both;
